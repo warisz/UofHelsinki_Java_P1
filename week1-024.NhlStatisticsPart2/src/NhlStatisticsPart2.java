@@ -19,7 +19,8 @@ public class NhlStatisticsPart2 {
             }
 
             if (command.equals("points")) {
-                // Print the top ten players sorted by points.
+                NHLStatistics.sortByPoints();
+                NHLStatistics.top(10);
             } else if (command.equals("goals")) {
                 // Print the top ten players sorted by goals.
             } else if (command.equals("assists")) {
