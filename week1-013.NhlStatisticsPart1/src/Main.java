@@ -14,6 +14,7 @@ public class Main {
         
         NHLStatistics.teamStatistics("PHI");
         
+        NHLStatistics.sortByPoints();
         NHLStatistics.teamStatistics("ANA");
     }
 }
