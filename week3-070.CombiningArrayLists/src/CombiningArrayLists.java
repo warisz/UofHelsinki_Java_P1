@@ -12,22 +12,25 @@ public class CombiningArrayLists {
 
         Collections.addAll(list1, 4, 3);
         // A shorthand for:
-        // list1.add(4);
-        // list1.add(3);
+
 
 
         Collections.addAll(list2, 5, 10, 7);
         // A shorthand for:
-        // list2.add(5);
-        // list2.add(10);
-        // list2.add(7);
+        
 
         // Implement the following method and then remove the comment
-        // combine(list1, list2);
+        combine(list1, list2);
         System.out.println(list1);
         System.out.println(list2);
 
 
+    }
+    
+    public static void combine(ArrayList<Integer> first, ArrayList<Integer> second){
+        for(int x : second){
+            first.add(x);
+        }
     }
 
 }

@@ -16,5 +16,12 @@ public class SmartCombining {
         System.out.println(list1);
         System.out.println(list2);
     }
+    
+    public static void smartCombine(ArrayList<Integer> first, ArrayList<Integer> second){
+        for (int x : second){
+            if(!first.contains(x))
+                first.add(x);
+        }
+    }
 
 }
