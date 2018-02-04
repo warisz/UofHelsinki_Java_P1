@@ -13,13 +13,10 @@ public class Main {
         String name = ".";
         String studentNumber = ".";
         
-        while (true){
+        while (!name.isEmpty()){
             System.out.print("name: ");
             name = reader.nextLine();
-            
-            if(name.equals("")){
-                break;
-            }
+
             System.out.print("studentnumber:");
             studentNumber = reader.nextLine();
             
