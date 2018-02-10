@@ -13,7 +13,6 @@ public class GuessingGame {
         instructions(lowerLimit, upperLimit);
         int lower = lowerLimit;
         int upper = upperLimit;
-        int avg = 0;
         while(lower<upper){
             int average = average(lower, upper);
 
@@ -22,7 +21,6 @@ public class GuessingGame {
             }else{
                 upper = average;
             }
-            avg = average;
         }
         System.out.println("The number you're thinking of is " + upper);
     }

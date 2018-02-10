@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Test your program here
-        int[] taulukko = {-3, 2, 3, 4, 7, 8, 12};
+        int[] taulukko = {8,9};
         Scanner lukija = new Scanner(System.in);
 
         System.out.print("Numbers in the array " + Arrays.toString(taulukko));
@@ -19,5 +19,10 @@ public class Main {
         boolean tulos = BinarySearch.search(taulukko, Integer.parseInt(etsittavaLuku));
 
         // Print here the result
+        if (tulos){
+            System.out.println("Value " + etsittavaLuku + " is in the array");
+        }else{
+            System.out.println("Value " + etsittavaLuku + " is not in the array");
+        }
     }
 }
